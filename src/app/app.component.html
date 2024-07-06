@@ -1,0 +1,15 @@
+<div class="app">
+  <h1 style="text-align: center;"> signal store Demo Todo lis</h1>
+</div>
+
+<!-- <div>
+  {{store.todo()|json}}
+</div> -->
+
+@if (!store.loading()) {
+  <app-todo-list></app-todo-list>
+}@else {
+  <div class="spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+}
